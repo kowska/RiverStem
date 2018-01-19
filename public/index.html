@@ -2,10 +2,27 @@
 <html>
 	<head>
 		<title>Simple Chat Server</title>
+		<script
+		  src="https://code.jquery.com/jquery-3.2.1.min.js"
+		  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+		  crossorigin="anonymous"></script>
+  		<script type="text/javascript" src="app.js"></script>
 	</head>
 	<body>
 
 		<h1>simple chat server</h1>
+
+
+		<div class="chat">
+			<div id="messages">
+				
+			</div>
+			
+			<form onsubmit="event.preventDefault(); sendText();">
+				<input type="text" name="input" id="text-box">
+			</form>
+
+		</div>
 
 	</body>
 </html>
